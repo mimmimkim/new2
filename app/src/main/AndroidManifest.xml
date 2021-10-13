@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.new2">
+
+    <permission
+        android:name="com.example.new2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.new2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".provider.MealInfoCheckActivity"></activity>
+        <activity android:name=".provider.VolunteerInfoResistActivity" />
+        <activity android:name=".provider.SupportInfoResistActivity" />
+        <activity android:name=".provider.MealInfoResistActivity" />
+        <activity android:name=".user.VolunteerResisterActivity" />
+        <activity android:name=".user.SupportInfoActivity" />
+
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyARYnjZ8WYsXLpDXGGIpuwbmd6xwckIXMM" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user.UserActivity" />
+        <activity android:name=".provider.ProviderActivity" />
+        <activity android:name=".user.MyPageActivity" />
+        <activity android:name=".user.VolunteerInfoPopup"/>
+    </application>
+
+</manifest>

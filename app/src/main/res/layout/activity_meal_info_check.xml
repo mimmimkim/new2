@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내가 등록한 급식 정보"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="급식소 정보"
+        android:layout_marginTop="30dp"
+        android:background="#ADA8B3"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="후원 정보"
+        android:layout_marginTop="30dp"
+        android:background="#ADA8B3"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="봉사 정보"
+        android:layout_marginTop="30dp"
+        android:background="#ADA8B3"
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</LinearLayout>

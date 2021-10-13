@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="후원 정보 등록"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#C9A6FA"
+            android:gravity="center"
+            android:text="급식소 이름"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText_name_support_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="급식소 이름을 입력해 주세요"
+            android:textSize="13dp"
+            android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#C9A6FA"
+            android:gravity="center"
+            android:text="급식소 위치"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editText_location_support_info"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="급식소 위치를 입력해 주세요"
+            android:textSize="13dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="도로명 주소"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#C9A6FA"
+            android:gravity="center"
+            android:text="후 원 계 좌"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText_account_support_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="후원 계좌를 입력해 주세요"
+            android:textSize="13dp"
+            android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#C9A6FA"
+            android:gravity="center"
+            android:text="전 화 번 호"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText_number_support_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="전화번호를 입력해 주세요"
+            android:textSize="13dp"
+            android:inputType="textPersonName"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#C9A6FA"
+            android:gravity="center"
+            android:text="사 용 내 역"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editText_usage_support_info"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="사용 내역을 입력해 주세요"
+            android:textSize="13dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="첨부 파일"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="등록"
+        />
+
+
+</LinearLayout>
